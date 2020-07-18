@@ -1,0 +1,11 @@
+.dash-point {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.number-point {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
