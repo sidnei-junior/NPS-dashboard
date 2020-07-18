@@ -1,0 +1,48 @@
+#main {
+    grid-area: main;
+}
+
+#graph-panel {
+    grid-area: graph;
+}
+
+#general-panel {
+    grid-area: general;
+}
+
+#nps-dashboard {
+    display: grid;
+    grid-template-areas: 
+    'main main'
+    'graph general'
+    'graph general';
+}
+
+#total-general-panel {
+    grid-area: total-general-panel;
+}
+
+#general-panel-title {
+    grid-area: general-panel-title;
+}
+
+#detractor-general-panel {
+    grid-area: detractor-general-panel;
+}
+
+#passive-general-panel {
+    grid-area: passive-general-panel;
+}
+
+#promoter-general-panel {
+    grid-area: promoter-general-panel;
+}
+
+#general-panel {
+    display: grid;
+    grid-template-areas: 
+    'general-panel-title general-panel-title general-panel-title general-panel-title general-panel-title'
+    'detractor-general-panel detractor-general-panel detractor-general-panel detractor-general-panel total-general-panel'
+    'passive-general-panel passive-general-panel passive-general-panel passive-general-panel total-general-panel'
+    'promoter-general-panel promoter-general-panel promoter-general-panel promoter-general-panel total-general-panel';
+}

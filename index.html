@@ -9,121 +9,128 @@
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/color.css">
+    <link rel="stylesheet" href="./css/grid.css">
 </head>
 
 <body>
+    <div id="nps-dashboard">
+        <div id="main">
+            <div id="main-title">NET PROMOTER SCORE</div>
+            <div id="face-panel" class="rating-panel">
+                <div id="face-rating-detractor" class="rating-range rating-detractor">
+                    <div id="face-dash-point" class="dash-point">
+                        <div class="div-face">
+                            <img class="img-face" src="./img/detractor.png" alt="detractor face">
+                            <label class="label-counter">13</label>
+                        </div>
 
-
-    <div id="face-panel" class="rating-panel">
-        <div id="face-rating-detractor" class="rating-range rating-detractor">
-            <div id="face-dash-point" class="dash-point">
-                <div class="div-face">
-                    <img class="img-face" src="./img/detractor.png" alt="detractor face">
-                    <label class="label-counter">13</label>
+                        <div class="div-face">
+                            <img class="img-face" src="./img/detractor.png" alt="detractor face">
+                            <label class="label-counter">0</label>
+                        </div>
+                        <div class="div-face">
+                            <img class="img-face" src="./img/detractor.png" alt="detractor face">
+                            <label class="label-counter">0</label>
+                        </div>
+                        <div class="div-face">
+                            <img class="img-face" src="./img/detractor.png" alt="detractor face">
+                            <label class="label-counter">0</label>
+                        </div>
+                        <div class="div-face">
+                            <img class="img-face" src="./img/detractor.png" alt="detractor face">
+                            <label class="label-counter">0</label>
+                        </div>
+                        <div class="div-face">
+                            <img class="img-face" src="./img/detractor.png" alt="detractor face">
+                            <label class="label-counter">0</label>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="div-face">
-                    <img class="img-face" src="./img/detractor.png" alt="detractor face">
-                    <label class="label-counter">0</label>
+                <div id="face-rating-passive" class="rating-range rating-passive">
+                    <div id="face-dash-point" class="dash-point">
+                        <div class="div-face">
+                            <img class="img-face" src="./img/passive.png" alt="passive face">
+                            <label class="label-counter">0</label>
+                        </div>
+                        <div class="div-face">
+                            <img class="img-face" src="./img/passive.png" alt="passive face">
+                            <label class="label-counter">0</label>
+                        </div>
+                    </div>
                 </div>
-                <div class="div-face">
-                    <img class="img-face" src="./img/detractor.png" alt="detractor face">
-                    <label class="label-counter">0</label>
+
+                <div id="face-rating-promoter" class="rating-range rating-promoter">
+                    <div id="face-dash-point" class="dash-point">
+                        <div class="div-face">
+                            <img class="img-face" src="./img/promoter.png" alt="promoter face">
+                            <label class="label-counter">0</label>
+                        </div>
+                        <div class="div-face">
+                            <img class="img-face" src="./img/promoter.png" alt="promoter face">
+                            <label class="label-counter">0</label>
+                        </div>
+                    </div>
                 </div>
-                <div class="div-face">
-                    <img class="img-face" src="./img/detractor.png" alt="detractor face">
-                    <label class="label-counter">0</label>
+            </div>
+
+            <div id="number-panel" class="rating-panel">
+                <div id="rating-detractor" class="rating-range rating-detractor">
+                    <div id="dash-point" class="dash-point red-dash">
+                        <div id="one-point" class="number-point red-point">1</div>
+                        <div id="two-point" class="number-point red-point">2</div>
+                        <div id="three-point" class="number-point red-point">3</div>
+                        <div id="four-point" class="number-point red-point">4</div>
+                        <div id="five-point" class="number-point red-point">5</div>
+                        <div id="six-point" class="number-point red-point">6</div>
+                    </div>
+                    <label>Detractors</label>
                 </div>
-                <div class="div-face">
-                    <img class="img-face" src="./img/detractor.png" alt="detractor face">
-                    <label class="label-counter">0</label>
+
+                <div id="rating-passive" class="rating-range rating-passive">
+                    <div id="dash-point" class="dash-point yellow-dash">
+                        <div id="seven-point" class="number-point yellow-point">7</div>
+                        <div id="eight-point" class="number-point yellow-point">8</div>
+                    </div>
+                    <label>Passives</label>
                 </div>
-                <div class="div-face">
-                    <img class="img-face" src="./img/detractor.png" alt="detractor face">
-                    <label class="label-counter">0</label>
+
+                <div id="rating-promoter" class="rating-range rating-promoter">
+                    <div id="dash-point" class="dash-point green-dash">
+                        <div id="nine-point" class="number-point green-point">9</div>
+                        <div id="ten-point" class="number-point green-point">10</div>
+                    </div>
+                    <label>Promoters</label>
                 </div>
             </div>
         </div>
-
-        <div id="face-rating-passive" class="rating-range rating-passive">
-            <div id="face-dash-point" class="dash-point">
-                <div class="div-face">
-                    <img class="img-face" src="./img/passive.png" alt="passive face">
-                    <label class="label-counter">0</label>
-                </div>
-                <div class="div-face">
-                    <img class="img-face" src="./img/passive.png" alt="passive face">
-                    <label class="label-counter">0</label>
-                </div>
-            </div>
+        <div id="graph-panel">
+            Graph
         </div>
-
-        <div id="face-rating-promoter" class="rating-range rating-promoter">
-            <div id="face-dash-point" class="dash-point">
-                <div class="div-face">
-                    <img class="img-face" src="./img/promoter.png" alt="promoter face">
-                    <label class="label-counter">0</label>
-                </div>
-                <div class="div-face">
-                    <img class="img-face" src="./img/promoter.png" alt="promoter face">
-                    <label class="label-counter">0</label>
-                </div>
+        <div id="general-panel">
+            <div id="general-panel-title">NPS = <span class="green-point-color">%PROMOTERS</span> - <span
+                    class="red-point-color">%DETRACTORS</span></div>
+            <div id="detractor-general-panel" class="row-general-panel">
+                <div id="detractor-title" class="row-title red-dash">Detractors</div>
+                <div id="detractor-general-counter" class="row-general-counter red-point">40</div>
+                <div id="detractor-percent" class="row-percent red-dash">33.3%</div>
+            </div>
+            <div id="passive-general-panel" class="row-general-panel">
+                <div id="passive-title" class="row-title yellow-dash">Passives</div>
+                <div id="passive-general-counter" class="row-general-counter yellow-point">40</div>
+                <div id="passive-percent" class="row-percent yellow-dash">33.3%</div>
+            </div>
+            <div id="promoter-general-panel" class="row-general-panel">
+                <div id="promoter-title" class="row-title green-dash">Promoters</div>
+                <div id="promoter-general-counter" class="row-general-counter green-point">40</div>
+                <div id="promoter-percent" class="row-percent green-dash">33.3%</div>
+            </div>
+            <div id="total-general-panel">
+                <div id="total-title">total</div>
+                <div id="total-general-counter">120</div>
             </div>
         </div>
     </div>
-
-    <div id="number-panel" class="rating-panel">
-        <div id="rating-detractor" class="rating-range rating-detractor">
-            <div id="dash-point" class="dash-point red-dash">
-                <div id="one-point" class="number-point red-point">1</div>
-                <div id="two-point" class="number-point red-point">2</div>
-                <div id="three-point" class="number-point red-point">3</div>
-                <div id="four-point" class="number-point red-point">4</div>
-                <div id="five-point" class="number-point red-point">5</div>
-                <div id="six-point" class="number-point red-point">6</div>
-            </div>
-            <label>Detractors</label>
-        </div>
-
-        <div id="rating-passive" class="rating-range rating-passive">
-            <div id="dash-point" class="dash-point yellow-dash">
-                <div id="seven-point" class="number-point yellow-point">7</div>
-                <div id="eight-point" class="number-point yellow-point">8</div>
-            </div>
-            <label>Passives</label>
-        </div>
-
-        <div id="rating-promoter" class="rating-range rating-promoter">
-            <div id="dash-point" class="dash-point green-dash">
-                <div id="nine-point" class="number-point green-point">9</div>
-                <div id="ten-point" class="number-point green-point">10</div>
-            </div>
-            <label>Promoters</label>
-        </div>
-    </div>
-
-    <div id="general-panel">
-        <div id="detractor-general-panel" class="row-general-panel">
-            <div id="detractor-title" class="row-title red-dash">Detractors</div>
-            <div id="detractor-general-counter" class="row-general-counter red-point">40</div>
-            <div id="detractor-percent" class="row-percent red-dash">33.3%</div>
-        </div>
-        <div id="passive-general-panel" class="row-general-panel">
-            <div id="passive-title" class="row-title yellow-dash">Passives</div>
-            <div id="passive-general-counter" class="row-general-counter yellow-point">40</div>
-            <div id="passive-percent" class="row-percent yellow-dash">33.3%</div>
-        </div>
-        <div id="promoter-general-panel" class="row-general-panel">
-            <div id="promoter-title" class="row-title green-dash">Promoters</div>
-            <div id="promoter-general-counter" class="row-general-counter green-point">40</div>
-            <div id="promoter-percent" class="row-percent green-dash">33.3%</div>
-        </div>
-        <div id="total-general-panel">
-            <div id="total-title">total</div>
-            <div id="total-general-counter">120</div>
-        </div>
-    </div>
-
 </body>
 
 </html>

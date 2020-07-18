@@ -1,3 +1,16 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: auto;
+    width: 50%;
+}
+
+#main-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 30px;
+}
+
 #face-panel {
     margin-bottom: 60px;
 }
@@ -68,6 +81,7 @@ label {
 }
 
 
+
 .number-point {
     color: aliceblue;
     font-size: 24px;
@@ -77,6 +91,16 @@ label {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+}
+
+#graph-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: black 5px dashed;
+    border-radius: 100%;
+    margin: 0 23px;
 }
 
 .row-general-panel {
@@ -113,7 +137,6 @@ label {
 }
 
 #total-general-panel {
-    grid-area: total-general-panel;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
@@ -153,22 +176,9 @@ label {
     text-align: center;
 }
 
-#detractor-general-panel {
-    grid-area: detractor-general-panel;
-}
-
-#passive-general-panel {
-    grid-area: passive-general-panel;
-}
-
-#promoter-general-panel {
-    grid-area: promoter-general-panel;
-}
-
-#general-panel {
-    display: grid;
-    grid-template-areas: 
-    'detractor-general-panel detractor-general-panel detractor-general-panel detractor-general-panel total-general-panel'
-    'passive-general-panel passive-general-panel passive-general-panel passive-general-panel total-general-panel'
-    'promoter-general-panel promoter-general-panel promoter-general-panel promoter-general-panel total-general-panel';
+#general-panel-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px;
 }
