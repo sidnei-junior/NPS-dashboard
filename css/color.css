@@ -10,12 +10,20 @@
     color: #e63d64;
 }
 
+.yellow-dash {
+    background-color: #ffffa1;
+}
+
 .yellow-point {
     background-color: #fbb809;
 }
 
 .yellow-point-color {
     color: #fbb809;
+}
+
+.green-dash {
+    background-color: #86dac0;
 }
 
 .green-point {
